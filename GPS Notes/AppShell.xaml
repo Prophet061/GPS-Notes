@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:GPS_Notes.Views"
+       Title="Notatki"
+       x:Class="GPS_Notes.AppShell">
+
+
+    <TabBar>
+        <ShellContent Title="Mapa" Icon="icon_map.png" Route="MapPage" ContentTemplate="{DataTemplate local:MapPage}"/>
+        <ShellContent Title="Start" Icon="icon_home.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Notatki" Icon="icon_note.png" ContentTemplate="{DataTemplate local:NotesPage}" />
+    </TabBar>
+
+</Shell>

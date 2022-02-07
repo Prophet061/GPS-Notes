@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GPS_Notes.Views.AboutPage"
+             xmlns:vm="clr-namespace:GPS_Notes.ViewModels"
+             Title="GPS Notatki">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
+                <Label Text="Notatki GPS" FontSize="Title"/>
+                <Label Text="Aplikacja przeznaczona do tworzenia notatek z uwzględnieniem lokalizacji w jakiej zostały one utworzone. Dodatkowo notatki mogą zostać wyświetlone na mapie." FontSize="16" Padding="0,0,0,0"/>
+                <Label Text="Aplikacja wykonana przez:" FontSize="16" Padding="0,0,0,0" Margin="0, 100, 0, 0"/>
+                <Label Text="Jakub Janusz 62006" FontSize="16" Padding="0,0,0,0"/>
+                <Label Text="Jakub Saładiak 55244" FontSize="16" Padding="0,0,0,0"/>
+
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

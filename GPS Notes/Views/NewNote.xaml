@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GPS_Notes.Views.NewNote"
+             Title="Notatka">
+
+    <StackLayout Margin="20">
+        <StackLayout VerticalOptions="StartAndExpand">
+            <Editor Text="{Binding Tekst}" Placeholder="Treść notatki" AutoSize="TextChanges"/>
+        </StackLayout>
+        <StackLayout VerticalOptions="End">
+            <Grid ColumnDefinitions="*,*" Grid.Row ="1">
+                <Button Text="Usuń" Grid.Column="0" Clicked="UsunButtonClicked"/>
+                <Button Text="Zapisz" Grid.Column="1" Clicked="ZapiszButtonClicked"/>
+            </Grid>            
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
